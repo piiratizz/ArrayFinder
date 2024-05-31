@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "5PqBR9CtmbOemMJ1w1nziEQ7OD+Aq0VinRqZi+8nBD3ENERJgFBKL8iLrBWPcSyyS/U6E3MM+kblUW7P4BThEg==",
+  "dgSpecHash": "q+3kN5rAYecGD0Yxi+rG5BY3cnceNA/IVh+RdZYuE6/y9UP8oQERtOCV2Mdsa/XQoCUjk8ToMIGVcfY2QnOFLQ==",
   "success": true,
-  "projectFilePath": "F:\\Programing\\С#\\ArrayFinder\\Cursovaya\\Cursovaya.csproj",
+  "projectFilePath": "F:\\Programing\\С#\\RE\\ArrayFinder\\Cursovaya\\Cursovaya.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\demarko\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\8.0.0\\microsoft.extensions.dependencyinjection.8.0.0.nupkg.sha512",
     "C:\\Users\\demarko\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.0\\microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512",

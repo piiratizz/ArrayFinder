@@ -116,11 +116,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\Programing\\С#\\ArrayFinder\\Cursovaya\\Cursovaya.csproj",
+      "projectUniqueName": "F:\\Programing\\С#\\RE\\ArrayFinder\\Cursovaya\\Cursovaya.csproj",
       "projectName": "Cursovaya",
-      "projectPath": "F:\\Programing\\С#\\ArrayFinder\\Cursovaya\\Cursovaya.csproj",
+      "projectPath": "F:\\Programing\\С#\\RE\\ArrayFinder\\Cursovaya\\Cursovaya.csproj",
       "packagesPath": "C:\\Users\\demarko\\.nuget\\packages\\",
-      "outputPath": "F:\\Programing\\С#\\ArrayFinder\\Cursovaya\\obj\\",
+      "outputPath": "F:\\Programing\\С#\\RE\\ArrayFinder\\Cursovaya\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\demarko\\AppData\\Roaming\\NuGet\\NuGet.Config",
