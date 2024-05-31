@@ -1,0 +1,141 @@
+﻿<Window x:Class="Cursovaya.Views.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Cursovaya"
+        xmlns:cmd="clr-namespace:Cursovaya.ViewModel.Commands"
+        mc:Ignorable="d"
+        Title="{Binding Title}" Height="450" Width="856" Icon="/Views/photo_2024-05-14_19-14-12.jpg">
+
+    <DockPanel>
+        <Menu DockPanel.Dock="Top">
+            <MenuItem Header="Файл">
+                <MenuItem Header="Зберегти як">
+                    <MenuItem.Command>
+                        <cmd:SaveCommand/>
+                    </MenuItem.Command>
+                </MenuItem>
+                <MenuItem Header="Вихід">
+                    <MenuItem.Command>
+                        <cmd:CloseApplicationCommand/>
+                    </MenuItem.Command>
+                </MenuItem>
+            </MenuItem>
+            <MenuItem Header="Потрібна допомога">
+                <MenuItem.Command>
+                    <cmd:HelpButtonCommand/>
+                </MenuItem.Command>
+            </MenuItem>
+        </Menu>
+        <Grid Width="849">
+            <TextBox HorizontalAlignment="Left"
+                 Margin="374,177,0,0"
+                 TextWrapping="NoWrap"
+                 Text="{Binding ArraySize, UpdateSourceTrigger=PropertyChanged}"
+                 VerticalAlignment="Top" Width="120"/>
+            <Label Content="Розмір масиву"
+               HorizontalAlignment="Left"
+               VerticalAlignment="Top" Margin="389,146,0,0"/>
+            <Button Content="Знайти"
+                    HorizontalAlignment="Left"
+                    Margin="405,322,0,0"
+                    VerticalAlignment="Top"
+                    Height="27" Width="58">
+                <Button.Command>
+                    <cmd:FindButtonCommand/>
+                </Button.Command>
+            </Button>
+
+            <TextBox HorizontalAlignment="Left"
+                Margin="109,177,0,0"
+                TextWrapping="NoWrap"
+                Text="{Binding MinRange, UpdateSourceTrigger=PropertyChanged}"
+                VerticalAlignment="Top" Width="70"/>
+            <Label Content="Мінімальний діапазон"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top" Margin="76,146,0,0"/>
+            <TextBox HorizontalAlignment="Left"
+                Margin="109,239,0,0"
+                TextWrapping="NoWrap"
+                Text="{Binding MaxRange, UpdateSourceTrigger=PropertyChanged}"
+                VerticalAlignment="Top" Width="70"/>
+            <Label Content="Максимальний діапазон"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top" Margin="76,208,0,0"/>
+            <TextBlock HorizontalAlignment="Left"
+                       Margin="693,10,0,0"
+                       TextWrapping="Wrap"
+                       Text="{Binding IndexField, UpdateSourceTrigger=PropertyChanged}"
+                       VerticalAlignment="Top" Height="406" Width="156"/>
+            <TextBox HorizontalAlignment="Left"
+                Margin="530,177,0,0"
+                TextWrapping="NoWrap"
+                Text="{Binding TargetElements, UpdateSourceTrigger=PropertyChanged}"
+                VerticalAlignment="Top" Width="120" Height="18"/>
+            <Label Content="Потрібні елементи"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top" Margin="530,151,0,0"/>
+
+            <RadioButton Content="Метод порівняння"
+                         HorizontalAlignment="Left"
+                         Margin="548,242,0,0"
+                         VerticalAlignment="Top">
+                <RadioButton.Command>
+                    <cmd:CompareMethodSelectedCommand/>
+                </RadioButton.Command>
+            </RadioButton>
+            <RadioButton Content="Метод інтерполяції"
+                         HorizontalAlignment="Left"
+                         Margin="548,262,0,0"
+                         VerticalAlignment="Top">
+                <RadioButton.Command>
+                    <cmd:InterpolationMethodSelectedCommand/>
+                </RadioButton.Command>
+            </RadioButton>
+            <RadioButton Content="Метод фібоначі"
+                         HorizontalAlignment="Left"
+                         Margin="548,282,0,0"
+                         VerticalAlignment="Top">
+                <RadioButton.Command>
+                    <cmd:FibonachiMethodSelectedCommand/>
+                </RadioButton.Command>
+            </RadioButton>
+            <RadioButton Content="Метод Хеш функції"
+                         HorizontalAlignment="Left"
+                         Margin="548,302,0,0"
+                         VerticalAlignment="Top">
+                <RadioButton.Command>
+                    <cmd:HashFunctionMethodSelectedCommand/>
+                </RadioButton.Command>
+            </RadioButton>
+            <Button Content="Згенерувати масив"
+                HorizontalAlignment="Left"
+                Margin="264,322,0,0"
+                VerticalAlignment="Top"
+                Height="27" Width="114">
+                <Button.Command>
+                    <cmd:ArrayGenerateCommand/>
+                </Button.Command>
+            </Button>
+
+            <Rectangle HorizontalAlignment="Left"
+           Height="146"
+           Width="538"
+           Stroke="Black"
+           VerticalAlignment="Top" Margin="131,0,0,0" Fill="DarkGray"/>
+
+            <ItemsControl ItemsSource="{Binding ArrayTextBlock, UpdateSourceTrigger=PropertyChanged}" Margin="131,0,180,270">
+
+            </ItemsControl>
+            <ProgressBar
+                HorizontalAlignment="Left"
+                Height="10"
+                Margin="264,354,0,0"
+                VerticalAlignment="Top"
+                Width="114"
+                Value="{Binding GenerationProgress, UpdateSourceTrigger=PropertyChanged}" Foreground="#FF00FF04" Cursor="No"/>
+        </Grid>
+
+    </DockPanel>
+</Window>

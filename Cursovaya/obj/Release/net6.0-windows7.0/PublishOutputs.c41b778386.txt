@@ -1,0 +1,7 @@
+C:\Users\demarko\Downloads\ProjTEst\Cursovaya.exe
+C:\Users\demarko\Downloads\ProjTEst\Cursovaya.dll
+C:\Users\demarko\Downloads\ProjTEst\Cursovaya.deps.json
+C:\Users\demarko\Downloads\ProjTEst\Cursovaya.runtimeconfig.json
+C:\Users\demarko\Downloads\ProjTEst\Cursovaya.pdb
+C:\Users\demarko\Downloads\ProjTEst\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\demarko\Downloads\ProjTEst\Microsoft.Extensions.DependencyInjection.Abstractions.dll
