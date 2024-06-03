@@ -53,7 +53,6 @@ namespace Cursovaya.ViewModel.Commands
             }
 
             string s = string.Empty;
-            sb.AppendLine($"Потрібний елемент: {string.Join(" ", s.ParseToIntArray(_mainWindowVM.TargetElements))}");
             sb.AppendLine($"Індекс: {_mainWindowVM.IndexField}");
 
 
