@@ -20,16 +20,16 @@
             int fibMinus2 = 0;
             int fibMinus1 = 1;
             int fibNumber = fibMinus1 + fibMinus2;
-            CheckedElements.Add(fibMinus2);
-            CheckedElements.Add(fibMinus1);
+            //CheckedElements.Add(fibMinus2);
+            //CheckedElements.Add(fibMinus1);
 
             while (fibNumber < n)
             {
                 fibMinus2 = fibMinus1;
                 fibMinus1 = fibNumber;
                 fibNumber = fibMinus1 + fibMinus2;
-                CheckedElements.Add(fibMinus2);
-                CheckedElements.Add(fibMinus1);
+                //CheckedElements.Add(fibMinus2);
+                //CheckedElements.Add(fibMinus1);
             }
 
             int offset = -1;
@@ -44,17 +44,17 @@
                     fibMinus1 = fibMinus2;
                     fibMinus2 = fibNumber - fibMinus1;
                     offset = i;
-                    CheckedElements.Add(fibMinus2);
-                    CheckedElements.Add(fibMinus1);
-                    CheckedElements.Add(offset);
+                    //CheckedElements.Add(fibMinus2);
+                    //CheckedElements.Add(fibMinus1);
+                    //CheckedElements.Add(offset);
                 }
                 else if (array[i] > target)
                 {
                     fibNumber = fibMinus2;
                     fibMinus1 = fibMinus1 - fibMinus2;
                     fibMinus2 = fibNumber - fibMinus1;
-                    CheckedElements.Add(fibMinus2);
-                    CheckedElements.Add(fibMinus1);
+                    //CheckedElements.Add(fibMinus2);
+                    //CheckedElements.Add(fibMinus1);
                 }
                 else
                 {
